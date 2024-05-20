@@ -1,91 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="" href="about.html">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="" href="about.html" />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-</head>
-<body>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!---------------------Navigation-Bar----------------------->
-    <nav class="top-nav"> 
-            <a href="#"><img src="/projrct 1/pictiures/logo.png" alt="logo"></a>
-        <ul>
-            <li><a href="">About</a></li>
-            <li> <a href="">Portfolio</a></li>
-            <li> <a href="">Contact</a></li>
-        </ul>
-        <input type="text" placeholder="search">
+    <nav class="top-nav">
+      <a href="#"><img src="/projrct 1/pictiures/logo.png" alt="logo" /></a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <input type="text" placeholder="search" />
     </nav>
     <!----------------------Main-Bar --------------------------->
-    <main class="main-bar">
-        <div class="profile">
-            <div class="about-section">
-                <h1>I'm</h1>
-                <h1 class="name">Ivan Dan</h1>    
-                <h4>Python Developer &  ERPNext <br>Consulant</h4>
-                <button>Contact ME</button>
-            </div>
-            <img src="./pictiures/Evan Dan.png" alt="Person" >  
-            <div class="icons">
-                <i class="ri-facebook-circle-fill"></i><br>
-                <i class="ri-twitter-fill"></i><br>
-                <i class="ri-facebook-circle-fill"></i><br>
-                <i class="ri-whatsapp-line"></i> <br>
-            </div> 
-            </div>
-        </main>
-        <div class="about">
-            <h1>About</h1><br>
-            I have acquired and sharpened m ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-            molestie. dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-            sollicitudin lacus, ut interdurn tellus elit sed risus_ Maecenas eget condimentum Vn organization. I
-            am  <span>trustworthy. creative. and an effective communicator</span>. I fondly anticipate working in a
-            challenging yet rewarding organization to attain its visions for personal growth.
-           </div>
-           <h1 class="Myskill">My Skills</h1>
-           <div class="skills-1">
-            <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-           
-            <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-           <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-            <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-           </div>
-           <div class="skills-2">
-            <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-           
-            <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-           <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-            <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-           </div>
-           <div class="skills-3">
-            <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-           
-            <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-           <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-           </div>
-           <div class="skills-4">
-            <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-           
-            <img src="./pictiures/skill1.png" alt="">
-            <h1>Python</h1>
-           </div>
-    </body>
+    <main>
+      <div class="profile">
+        <div class="about-section">
+          <h1>I'm</h1>
+          <h1 class="name">Ivan Dan</h1>
+          <h4>
+            Python Developer & ERPNext
+            <br />
+            Consulant
+          </h4>
+          <button>Contact ME</button>
+        </div>
+        <div class="parent">
+          <img
+            height="600px"
+            style="object-fit: contain;"
+            src="./pictiures/Evan Dan.png"
+            alt="Person"
+          />
+          <div class="icons">
+            <div class="divider"></div>
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-whatsapp-line"></i>
+          </div>
+        </div>
+      </div>
+      <div class="about" id="about"> 
+       
+        <h1>About</h1>
+        <br />
+        <p>
+          I have acquired and sharpened m ipsum dolor sit amet, consectetur
+          adipiscing elit. Etiam eu turpis molestie. dictum est a, mattis
+          tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+          sollicitudin lacus, ut interdurn tellus elit sed risus_ Maecenas eget
+          condimentum Vn organization. I am
+          <span>trustworthy. creative. and an effective communicator</span>
+          . I fondly anticipate working in a challenging yet rewarding
+          organization to attain its visions for personal growth.
+        </p>
+      </div>
+      <h1 class="Myskill">My Skills</h1>
+      <div class="skills-1">
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+      </div>
+      <div class="skills-2">
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+      </div>
+      <div class="skills-3">
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+      </div>
+      <div class="skills-4">
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+
+        <img src="./pictiures/skill1.png" alt="" />
+        <h1>Python</h1>
+      </div>
+    </main>
+  </body>
 </html>
