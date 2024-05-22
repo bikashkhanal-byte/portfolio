@@ -6,6 +6,8 @@
 
 html{
     scroll-behavior: smooth;
+    scrollbar-width: none;
+    
 }
 
 :root{
@@ -13,10 +15,11 @@ html{
     --secondary:#FFC86B;
     --tertiary:#3D3E42;
     --forth:#31333B;
-    --fifth:#3D3E42;
     --sixth:#30323A;
     --font-size:50px;
-    --skils:#3D3E42;
+    --border:#3D3E42;
+    --letter:#E5E5E6;
+    --hover:#F0BF6C;
 }
 
 body{
@@ -47,26 +50,43 @@ body{
     align-items:center ;
     justify-content: center;
     color: var(--secondary);
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 750;
+    font-size: 18px;
 }
 
 .top-nav a {
-    color: var(--secondary);
+    color: #535458;
     text-decoration: none;
     padding: 7px;
     text-align: center;
+
 }
 
 .top-nav a:hover{
-    color: rgb(255, 0, 43);
+    color: var(--letter);
 }
 
+.search-box{
+    position: relative;
+}
 
-.top-nav input{
-    height: 20px;
+.search-box i{
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    color:#909092;
+    font-size: 15px;
+}   
+
+.search-box input{
+    height: 30px;
+    width: 120px;
     background-color: #3D3E42;
+    border-radius: 5px;
+    border: none;
 }
+
+
 
 /*             main-bar           */
 
@@ -84,13 +104,20 @@ body{
     justify-content: center;
 }
 
-.name { 
-    font-size: 70px;
-    color: var(--secondary);
+.about-section h1 {
+    color: var(--letter);
 }
 
+.about-section span{
+    color: var(--secondary);
+    font-size: 60px;
+}
+
+
 .profile h4{
-    font-size: 30px;
+    font-size: 20px;
+    color: var(--letter);
+    margin-top: 10px;
 
 }
 
@@ -99,8 +126,10 @@ body{
     border: 3px solid var(--secondary);
     color: var(--secondary);
     background-color: transparent;
-    width: 100px;
+    width: 120px;
     cursor: pointer;
+    margin-top:20px ;
+    border-radius: 6px;
 }
 .parent{
 position: relative;
@@ -131,10 +160,11 @@ position: relative;
 }
 
 .about{
-    color: white;
+    color: var(--letter);
     font-size: 16px;
     
 }
+
 
 .about h1{
     font-size: var(--font-size);
@@ -143,34 +173,240 @@ position: relative;
 .about span{
     color: var(--secondary);
 }
+.divide{
+    position: relative;
+}
 
-.Myskill {
-    color: white;
+.divide p{
+    margin-top: 0px;
+    margin-bottom: 0;
+    margin-left: 70px;
+    margin-right: 90px;
+    
+}
+
+.divider-2{
+    height: 2px;
+    width: 60px;
+    background-color: var(--secondary);
+    position: absolute;
+    top: 10px;
+    
+}
+
+.myskills{
     text-align: center;
+    color: var(--letter) ;
     font-size: var(--font-size);
+    margin-top: 100px;
+}
+.Skills-Section {
+    margin-bottom: 30px;
+
 }
 
-.skills-1{
+.Skills-Section i{
+    font-size: 60px;
+
+}
+
+.skill1{
     display: flex;
     align-items: center;
     justify-content: center;
-  
+    gap: 30px;
 }
 
-.skills-2{
+.python{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding:30px 30px 30px 30px ;
+    background-color: var(--border);
+
+}
+
+.python:hover{
+    background-color: var(--hover) ;
+
+}
+.flutter{
+    border: 1px solid var();
+    border-radius: 5px;
+    padding: 30px 30px 30px 30px ;
+    background-color: var(--border);
+    color: #40C4FF;
+
+}
+
+.flutter:hover{
+    background-color: var(--hover) ;
+}
+
+
+.ubuntu{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding:30px 30px 30px 30px ;
+    background-color: var(--border);
+    color: #E64A19;
+}
+
+.ubuntu:hover{
+    background-color: var(--hover) ;
+
+}
+
+.git{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding:30px 30px 30px 30px ;
+    background-color: var(--border);
+}
+
+.git:hover{
+    background-color: var(--hover) ;
+    
+}
+
+.skill2{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 30px;
+    margin-top:30px ;
+
 }
 
-.skills-3{
+.erp-net{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding:30px 30px 30px 30px;
+    background-color: var(--border);
+}
+
+.erp-net:hover{
+    background-color: var(--hover) ;
+
+}
+.mongodb{
+    border: 1px solid var();
+    border-radius: 5px;
+    padding: 30px 30px 30px 30px ;
+    background-color: var(--border);
+    color: #40C4FF;
+
+}
+
+.mongodb:hover{
+    background-color: var(--hover) ;
+}
+
+
+.html-css{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding:30px 30px 30px 30px ;
+    background-color: var(--border);
+    color: #E64A19;
+}
+
+.html-css:hover{
+    background-color: var(--hover) ;
+
+}
+
+.js{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding:30px 30px 30px 30px ;
+    background-color: var(--border);
+}
+
+.js:hover{
+    background-color: var(--hover) ;
+    
+}
+
+.skill3{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 30px;
+    margin-top:30px ;
+
 }
 
-.skills-4{
+.frappe{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding:30px 30px 30px 30px ;
+    background-color: var(--border);
+
+}
+
+.frappe:hover{
+    background-color: var(--hover) ;
+
+}
+.net{
+    border: 1px solid var();
+    border-radius: 5px;
+    padding: 30px 30px 30px 30px ;
+    background-color: var(--border);
+    color: #40C4FF;
+
+}
+
+.net:hover{
+    background-color: var(--hover) ;
+}
+
+
+.flask-microweb{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding:30px 30px 30px 30px ;
+    background-color: var(--border);
+    color: #E64A19;
+}
+
+.flask-microweb:hover{
+    background-color: var(--hover) ;
+
+}
+
+.skill4{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 30px;
+    margin-top:30px ;
+
 }
+
+.my-sql{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding:30px 30px 30px 30px ;
+    background-color: var(--border);
+
+}
+
+.my-sql:hover{
+    background-color: var(--hover) ;
+
+}
+.aws-server{
+    border: 1px solid var();
+    border-radius: 5px;
+    padding: 30px 30px 30px 30px ;
+    background-color: var(--border);
+    color: #40C4FF;
+
+}
+
+.aws-server:hover{
+    background-color: var(--hover) ;
+}
+
+

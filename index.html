@@ -20,20 +20,23 @@
   <body>
     <!---------------------Navigation-Bar----------------------->
     <nav class="top-nav">
-      <a href="#"><img src="/projrct 1/pictiures/logo.png" alt="logo" /></a>
+      <a href="#"><img src="./pictiures/logo.png" alt="logo" /></a>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <input type="text" placeholder="search" />
+      <div class="search-box">
+        <input type="text" placeholder="  Search" />
+        <i class="ri-search-line"></i>
+      </div>
+      
     </nav>
     <!----------------------Main-Bar --------------------------->
     <main>
       <div class="profile">
         <div class="about-section">
-          <h1>I'm</h1>
-          <h1 class="name">Ivan Dan</h1>
+          <h1> I'm   <span> Ivan Dan </span></h1>
           <h4>
             Python Developer & ERPNext
             <br />
@@ -58,59 +61,99 @@
         </div>
       </div>
       <div class="about" id="about"> 
-       
         <h1>About</h1>
-        <br />
-        <p>
-          I have acquired and sharpened m ipsum dolor sit amet, consectetur
-          adipiscing elit. Etiam eu turpis molestie. dictum est a, mattis
-          tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-          sollicitudin lacus, ut interdurn tellus elit sed risus_ Maecenas eget
-          condimentum Vn organization. I am
-          <span>trustworthy. creative. and an effective communicator</span>
-          . I fondly anticipate working in a challenging yet rewarding
-          organization to attain its visions for personal growth.
-        </p>
-      </div>
-      <h1 class="Myskill">My Skills</h1>
-      <div class="skills-1">
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-      </div>
-      <div class="skills-2">
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-      </div>
-      <div class="skills-3">
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-      </div>
-      <div class="skills-4">
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-
-        <img src="./pictiures/skill1.png" alt="" />
-        <h1>Python</h1>
-      </div>
+        
+        <div class="divide">
+          <div class="divider-2"> </div>   
+          <p>
+            I have acquired and sharpened m ipsum dolor sit amet, consectetur
+            adipiscing elit. Etiam eu turpis molestie. dictum est a, mattis
+            tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+            sollicitudin lacus, ut interdurn tellus elit sed risus_ Maecenas eget
+            condimentum Vn organization. I am
+            <span>trustworthy. creative. and an effective communicator</span>
+            . I fondly anticipate working in a challenging yet rewarding
+            organization to attain its visions for personal growth.
+          </p>
+        </div>
+        <h1 class="myskills">MY Skills</h1>
+          <div class="Skills-Section">
+            <div class="skill1">
+              <div class="python">
+                <i class="ri-flutter-fill"></i>
+                <p style="text-align: center;
+                ">Python</p>
+              </div>
+              <div class="flutter">
+                <i class="ri-flutter-fill"></i>
+                <p style="text-align: center;
+                ">Flutter</p>
+              </div>
+              <div class="ubuntu">
+                <i class="ri-ubuntu-line"></i>
+                <p style="text-align: center;
+                ">Ubuntu</p>
+              </div>
+              <div class="git">
+                <i class="ri-flutter-fill"></i> 
+                <p style="text-align: center;
+                ">git Source <br>Control</p>
+              </div>
+            </div>
+            <div class="skill2">
+              <div class="erp-net">
+                <i class="ri-flutter-fill"></i>
+                <p style="text-align: center;
+                ">ERP&Next</p>
+              </div>
+              <div class="mongodb">
+                <i class="ri-flutter-fill"></i>
+                <p style="text-align: center;
+                ">MongoDB</p>
+              </div>
+              <div class="html-css">
+                <i class="ri-ubuntu-line"></i>
+                <p style="text-align: center;
+                ">Html&CSS</p>
+              </div>
+              <div class="js">
+                <i class="ri-flutter-fill"></i> 
+                <p style="text-align: center;
+                ">JavaScript</p>
+              </div>
+            </div>
+            <div class="skill3">
+              <div class="frappe">
+                <i class="ri-flutter-fill"></i>
+                <p style="text-align: center;
+                ">Frappe</p>
+              </div>
+              <div class="net">
+                <i class="ri-flutter-fill"></i>
+                <p style="text-align: center;
+                ">.Net</p>
+              </div>
+              <div class="flask-microweb">
+                <i class="ri-ubuntu-line"></i>
+                <p style="text-align: center;
+                ">Flask Microweb <br>Framerwork</p>
+              </div>
+            </div>
+            <div class="skill4">
+              <div class="my-sql">
+                <i class="ri-flutter-fill"></i>
+                <p style="text-align: center;
+                ">My-sql</p>
+              </div>
+              <div class="aws-server">
+                <i class="ri-flutter-fill"></i>
+                <p style="text-align: center;
+                ">AWS-Server</p>
+              </div>
+            </div>
+           
+          </div>
+      
     </main>
   </body>
-</html>
+  </html>
